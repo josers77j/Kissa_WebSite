@@ -1,0 +1,314 @@
+/* inicio settings text */
+#planes{
+    width: 100%;
+    margin: auto;
+}
+#planes h3{
+    margin: auto;
+    width: 55%;
+    border: 3px solid #46300a;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 18px;
+}
+#planes a{
+    text-decoration:underline;
+}
+#planes{
+    width: 90%;
+    text-align: center;
+    padding: 30px 0;
+}
+#descripcion{
+    width: 90%;
+    text-align: justify;
+    padding: 30px 0;
+}
+/* fin settings text */
+
+/* el contenido inferior es parte de todos los planes
+al ser contenido al 100% de mi parte,
+no vi la necesidad de comentar y seccionar todo */
+
+/* bienvenida y descripcion de planes */
+.title-container{
+    text-align: center;
+    padding: 10px;
+}
+.description-container{
+    background: #f8f1e7;
+    width: 90%;
+    max-width: 1200px;
+    padding: 20px;
+}
+.description-container h4{
+    font-size: 24px;
+    padding: 20px 0;
+    letter-spacing: 6px;
+}
+.description-container p{
+    padding: 20px 0;
+    font-size: 20px;
+}
+
+/* fin bienvenida y descripcion de planes */
+
+/* inicio banner de planes */
+.banner-container{
+    margin: auto;
+    display: block;
+    width: 100%;
+    margin: 10px auto;
+    text-align: center;
+}
+.banner-container img{
+    width: 100%;
+    max-width: 1200px;
+
+}
+
+/* fin banner de planes */
+
+
+.planes-container{
+    width: 100%;
+    background: #fafafa;
+}
+
+/* inicio paquetes de planes y sus redirecciones */
+
+
+/* este apartado abarca los diferentes planes, al seleccionar un plan
+este redirigira al usuario dentro de la misma pagina yendo a la seccion
+requerida */
+.planes-content{
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    margin: auto;
+    padding: 20px;
+}
+.planes-cards{
+    background: #ffff;
+    border-radius: 4px;
+}
+.planes-img{
+    width: 100%;
+    text-align: center;
+}
+.planes-img img{
+    width: 50%;
+    transition: .3s;
+}
+.planes-titulo, a{
+    text-align: center;
+    text-decoration: none;
+    color: #46300a;
+}
+#arrow{
+    
+    transition: .2s;
+}
+.planes-cards:hover a{ 
+    color: #ff695f;
+    transition: .2s;
+}
+.planes-cards:hover img{
+    opacity: 0.7;
+    transition: .3s;
+}
+.planes-cards:hover #arrow{
+    color: #ff695f;
+    transform: translate(0, 5px);
+    transition: .3s;
+}
+/* fin  paquetes de planes y sus redirecciones*/
+
+/* contenedor de los paquetes */
+.paquetes-container{
+    width: 100%;    
+    background: #ffff;
+}
+.paquete-info{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 0;
+    border-top: 1px solid;
+}
+
+.paquete-text{
+display: flex;
+justify-content: start  ;
+padding: 10px;
+}
+.paquete-text img{
+    width: 100%;
+    max-width: 70px;
+    margin: 0 10px ;
+}
+.paquete-text h2{
+    font-size: 40px;
+    letter-spacing: 3px;
+
+}
+/* fin contenedor de los paquetes*/
+
+/* las tablas de los paquetes tendran diferentes estilos 
+por ello, cada estilo de las diferentes tablas estara seccionado*/
+
+/* ------------------------------------------------------------- */
+
+/* inicio tabla paquete basico */
+.content-table{
+    width: 100%;
+    max-width: 1200px;
+    overflow-x: auto;
+}
+
+.content-table .table{
+    width: 100%;
+    font-size: 24px;
+    border-collapse: collapse;
+    
+    border: 3px solid;
+}
+
+.content-table .table td{
+    font-size: 28px;
+    font-weight: bolder;
+    text-align: center;
+    background: #46300a;
+    color: #f8f1e7;
+    border: 1px solid;
+}
+
+.content-table .table th{
+    
+    font-size: 24px;
+    border: 1px solid;
+}
+.content-table .table th p{
+    letter-spacing: 2px;
+    font-weight: bolder;
+    font-size: 50px;
+    
+}
+
+/* inicio consideraciones */
+.consideracion-content{
+    width: 90%;
+    font-size: 16px;
+    padding: 15px;
+}
+.content-precios{
+    padding: 30px;
+    display: inline-grid;
+    grid-template-columns: auto auto;
+}
+.content-precios .precios-text{
+    font-size: 28px;
+}
+.content-precios .precios-button button,.content-precios .precios-button button a, .content-precios .precios-button button i{
+    background: #46300a;
+    color: #fafafa;
+    font-size: 26px;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    transition: .3s;
+}
+.content-precios .precios-button button:hover,
+.content-precios .precios-button button:hover a{
+    background: #8d703d;
+    color: #fafafa;   
+    transition: .3s;
+}
+
+.content-precios .precios-button:hover i{
+    background: #8d703d;
+    transform: translate(5px, 0);
+    transition: .3s;
+}
+/* fin consideraciones */
+
+
+/* fin tabla paquete basico */
+
+/* ------------------------------------------------------------- */
+
+/* @media para responsive design */
+
+@media(max-width:1280px){
+    .content-table .table{
+        width: 95%;
+        margin: auto;
+        padding: 10px;
+    }
+    .content-table .table td{
+        font-size: 22px;
+        
+    }
+    
+    .content-table .table th{
+        margin: 4px;
+        font-size: 20px;
+        border: 1px solid;
+        padding: 5px;
+    }
+    .content-table .table th p{
+        letter-spacing: 1px;
+        font-size: 40px;
+        
+    }
+}
+
+@media(max-width:768px){
+    .content-table .table{
+        width: 90%;
+        margin: auto;
+        padding: 5px;
+    }
+    .content-table .table td{
+        font-size: 20px;
+        
+    }
+    
+    .content-table .table th{
+        margin: 4px;
+        font-size: 16px;
+        border: 1px solid;
+    }
+    .content-table .table th p{
+        letter-spacing: 1px;
+        padding: 3px;
+        font-size: 30px;
+       
+    } 
+    .content-precios{
+        display: grid;
+      grid-template-columns:1fr;
+    }
+    #descripcion{
+        width: 90%;
+        text-align: justify;
+        padding: 20px 0;
+        margin: auto;
+    }
+    .paquete-text img{
+        width: 100%;
+        max-width: 120px;
+        margin: 0 10px ;
+    }
+    .paquete-text h2{
+        width: 50%;
+        font-size: 29px;
+    }
+    .planes-content{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+    }
+}

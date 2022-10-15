@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+#anotacion-class{
+    width: 100%;
+    padding: 50px;
+}
+#notacion{
+    width: 50%;
+    margin: auto;
+    text-align: justify;
+    font-style: italic;
+}
+#biografia{
+    font-style: italic;
+}
+
+/* inicio contenedor sobre mi persona */
+.nosotros-container{
+    width: 100%;
+    max-width: 1200px;
+    background: #f8f1e7;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    gap: 10px;
+    
+}
+.nosotros-content-img img{
+    width: 100%;
+    max-width: 400px;    
+}
+.nosotros-content-descripcion{
+    width: 100%;
+    padding: 10px;
+}
+.nosotros-content-descripcion h1{
+    font-size: 60px;
+    font-family: 'Bebas Neue', cursive;
+    color: #2d2d2d;
+}
+.nosotros-content-descripcion p{
+    text-align: justify;
+    font-size: 20px;
+}
+#social1,
+#social2,
+#social3{
+    color: #2d2d2d;
+    font-size: 70px;
+}
+
+#social1:hover{
+    color: rgb(39, 39, 189);
+}
+#social2:hover{
+    color: skyblue;
+}
+#social3:hover{
+    color: red;
+}
+/* fin contenedor sobre mi persona */
+
+/* ----------------------------------------- */
+
+/* inicio mision vision y valores*/
+.valores-container{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+    padding: 30px;    
+}
+.valores-content{
+    background: #fafafa;
+    padding: 10px;
+}
+.valores-content h1{
+    font-size: 35px;
+    text-align: center;
+    border-top: 3px solid #644137;
+
+}
+
+.valores-content p{
+    text-align: justify;
+    font-size: 20px;
+}
+.valores-content ul{
+    padding: 0 20px;
+    list-style-type: circle;
+}
+.valores-content ul li{
+    font-size: 20px;
+    padding: 5px;
+}
+
+
+/* fin mision vision y valores*/
+
+@media (max-width:768px){
+
+    .nosotros-container{
+        display: grid;
+        grid-template-columns: repeat(1,auto);
+        gap: 10px; 
+    }
+
+    .valores-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 20px;
+        padding: 30px;    
+    }
+    #notacion{
+        width: 90%;
+        margin: auto;
+        text-align: justify;
+        font-style: italic;
+    }
+}
