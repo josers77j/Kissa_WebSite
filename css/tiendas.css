@@ -104,12 +104,9 @@ padding: 20px 0;
 @media(max-width:1280px){
     .tienda-main-content{
         display: grid;
-        grid-template-areas: "shop1"
-                             "shop2"
-                             "shop3"
-                             "shop4"
-                             "shop5"
-                             "shop6";
+        grid-template-areas: "shop1 shop2"                             
+                             "shop3 shop4"                    
+                             "shop5 shop6";
         gap: 10px;
         padding: 5px;
     }
@@ -128,17 +125,27 @@ padding: 20px 0;
 .tienda-label,
 #shop1 p{
     width: 90%;
-    padding: 40px 0;
+    padding: 10px 0;
     font-size: 22px;
+}
+.tienda-main-card{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
 }
 }
 @media(max-width:768px){
-    .tienda-main-card{
+    .tienda-main-content{
         display: grid;
-        grid-template-columns: repeat(1,1fr);
-        background: #ffff;
-        border-bottom: 2px solid;
+        grid-template-areas: "shop1"
+                             "shop2"
+                             "shop3"
+                             "shop4"
+                             "shop5"
+                             "shop6";
+        gap: 10px;
+        padding: 5px;
     }
+
     .tienda-label,
 #shop1 p{
     width: 90%;
