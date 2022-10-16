@@ -548,25 +548,25 @@ background: #fafafa;
     padding: 20px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap: 20px;
+    gap: 10px;
 
 }
 .footer-content{
     display: grid;
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 10px;
     width: 100%;
 }
 
 .footer-information{
     display: grid;
-    gap: 20px;
+    gap: 10px;
 }
 
 .footer-information p{
     text-align: justify;
-    font-size: 18px;
-    padding: 0 20px;
+    font-size: 20px;
+    padding: 0 10px;
 }
 .footer-social{
     width: 100%;
@@ -574,7 +574,7 @@ background: #fafafa;
 .fa-brands{
     font-size: 40px;
     color: #fff;
-    margin: 10px;  
+    margin: 8px;  
     transition:.2s; 
 }
 .fa-brands:hover{
@@ -584,16 +584,16 @@ background: #fafafa;
 
 .footer-direccion{
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
+    grid-template-columns: repeat(1,1fr);
+    gap: 10px;
     width: 100%;
 }
 .footer-direccion p{
     
     width: 100%;
-    font-size: 25px;
+    font-size: 20px;
     text-align: justify;
-    padding: 0 20px;
+    padding: 0 10px;
 }
 .footer-form{
     display: grid;
@@ -792,8 +792,8 @@ background: #fafafa;
     .footer-direccion p{
     
         width: 100%;
-        font-size: 20px;
-    }
+        font-size: 18px;
+        }
     .container-caracteristicas{
         grid-template-columns: repeat(3,1fr);
     }
